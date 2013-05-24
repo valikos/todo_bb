@@ -23,7 +23,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem "jammit", :git => 'git://github.com/documentcloud/jammit.git'
+# gem "jammit", :git => 'git://github.com/documentcloud/jammit.git'
 
 gem 'pry-rails', group: 'development'
 
