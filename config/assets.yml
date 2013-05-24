@@ -1,5 +1,0 @@
-# embed_assets: on
-
-# javascripts:
-#   application:
-#     - app/templates/*.jst.ejs
