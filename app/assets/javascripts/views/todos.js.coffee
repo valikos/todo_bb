@@ -9,7 +9,10 @@ class TodoApp.Views.Todos extends Backbone.View
     @collection.on 'reset', this.renderAll, this
 
   addOne: (todo) ->
-    todoView = new TodoApp.Views.Todo({model: todo})
+    todoView = new TodoApp.Views.Todo
+      model: todo
+      collection: @collection
+
     @$el.append todoView.render().el
 
   renderAll: ->

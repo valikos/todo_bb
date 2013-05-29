@@ -7,10 +7,12 @@ class TodoApp.Views.Todo extends Backbone.View
   events:
     "change .checker": 'toggleComplete'
     "dblclick td:nth-child(2)": 'editTodo'
+    "click .icon-remove": "removeTodo"
 
   initialize: ->
     _.bindAll @
     @model.on 'change:title', this.render, this
+    @model.on 'hide', this.remove, this;
 
   render: ->
     @$el.html @template(@model.attributes)
@@ -29,3 +31,6 @@ class TodoApp.Views.Todo extends Backbone.View
     editForm = new TodoApp.Views.EditForm({model: @model, el: @el})
     editForm.render()
     editForm.$('input').focus()
+
+  removeTodo: ->
+    @collection.remove @model

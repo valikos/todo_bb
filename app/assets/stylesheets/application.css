@@ -18,3 +18,6 @@
 .edit-todo-form {
   margin: 0;
 }
+.select-col, .remove-col {
+  width: 20px;
+}
