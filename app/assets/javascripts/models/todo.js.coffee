@@ -6,3 +6,6 @@ class TodoApp.Models.Todo extends Backbone.Model
   changeTitle: (title) ->
     @set({title: title})
     @save()
+
+  isEditable: ->
+    @get('done') is off

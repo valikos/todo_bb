@@ -28,9 +28,10 @@ class TodoApp.Views.Todo extends Backbone.View
     1
 
   editTodo: (e) ->
-    editForm = new TodoApp.Views.EditForm({model: @model, el: @el})
-    editForm.render()
-    editForm.$('input').focus()
+    if @model.isEditable()
+      editForm = new TodoApp.Views.EditForm({model: @model, el: @el})
+      editForm.render()
+      editForm.$('input').focus()
 
   removeTodo: ->
     @collection.remove @model
