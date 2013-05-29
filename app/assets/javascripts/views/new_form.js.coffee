@@ -12,7 +12,7 @@ class TodoApp.Views.NewForm extends Backbone.View
   addNew: (e) ->
     e.preventDefault()
 
-    @collection.create(
-      title: @$('input[name=title]').val(),
-      {wait: true}
-    )
+    @collection.create {title: @$('input[name=title]').val()},
+      wait: true
+      success: =>
+        @$('input').val('')

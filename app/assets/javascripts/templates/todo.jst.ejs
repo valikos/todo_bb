@@ -1,12 +1,16 @@
 <% if(done === true) { %>
   <td class="select-col">
-  <input class="checker" type="checkbox" checked="checked">
+    <label class="checkbox">
+      <input class="checker" type="checkbox" checked="checked">
+    </label>
   </td>
   <td class="done"><%= title %></td>
   <td class="remove-col"><i class="icon-remove"></i></td>
 <% } else { %>
   <td class="select-col">
-  <input class="checker" type="checkbox">
+    <label class="checkbox">
+      <input class="checker" type="checkbox">
+    </label>
   </td>
   <td><%= title %></td>
   <td class="remove-col"><i class="icon-remove"></i></td>

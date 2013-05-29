@@ -7,7 +7,7 @@ class TodoApp.Routers.Base extends Backbone.Router
 
   index: ->
     layout = new TodoApp.Views.Layout()
-    $('.container').html layout.render().el
+    $('.todo-widget').html layout.render().el
 
     todos = new TodoApp.Collections.Todos
 

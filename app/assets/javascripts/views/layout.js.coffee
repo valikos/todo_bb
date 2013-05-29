@@ -1,6 +1,6 @@
 class TodoApp.Views.Layout extends Backbone.View
   id: 'todo-layout'
-  className: 'well'
+  className: 'row-fluid'
 
   template: JST['templates/layout']
 
