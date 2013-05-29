@@ -1,0 +1,11 @@
+<td>
+<% if(done === true) { %>
+  <input class="checker" type="checkbox" checked="checked">
+  <td class="done"><%= title %></td>
+  <td><i class="icon-remove"></i></td>
+<% } else { %>
+  <input class="checker" type="checkbox">
+  <td><%= title %></td>
+  <td><i class="icon-remove"></i></td>
+<% } %>
+</td>

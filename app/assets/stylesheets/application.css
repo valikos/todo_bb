@@ -11,3 +11,10 @@
  *= require_self
  *= require_tree .
  */
+
+.done {
+  text-decoration: line-through
+}
+.edit-todo-form {
+  margin: 0;
+}

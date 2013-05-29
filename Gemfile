@@ -6,7 +6,7 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
+gem 'ejs'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -22,8 +22,6 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
-# gem "jammit", :git => 'git://github.com/documentcloud/jammit.git'
 
 gem 'pry-rails', group: 'development'
 

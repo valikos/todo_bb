@@ -1,11 +1,8 @@
 class TodoApp.Models.Todo extends Backbone.Model
+  toggleCompleted: (status) ->
+    @set({done: status})
+    @save()
 
-  defaults:
-    title: 'write a new todo ...'
-    done: false
-
-  parse: ->
-    @
-
-  toJSON: ->
-    @
+  changeTitle: (title) ->
+    @set({title: title})
+    @save()
